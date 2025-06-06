@@ -151,12 +151,11 @@ import emitter from './emitter';
 const initialXml = `
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Definitions_0aui0ws" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.15.1">
-  <bpmn:process id="Process_1" isExecutable="false" />
+  <bpmn:process id="Process_1" name="booking" isExecutable="true" camunda:historyTimeToLive="180">
   <bpmndi:BPMNDiagram id="BpmnDiagram_1">
     <bpmndi:BPMNPlane id="BpmnPlane_1" bpmnElement="Process_1" />
   </bpmndi:BPMNDiagram>
 </bpmn:definitions>
-
 `
 
 const initialForm = {
